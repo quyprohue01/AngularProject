@@ -2,5 +2,12 @@
     <h3>Đây là component Home</h3>
     <p>Thêm hàng thứ 2 vào Home</p>
     <h1>{{ name }} Developer</h1>
+    <input value="{{name}}" />
+    <br />
+    <br />
+    <input value="name" title="đây là name" />
+    <br />
+    <input [value]="name" title="đây là {{name}}" />     <!-- gọi biến "name" -->
+    <br/>
+    <input [value]="name" [title]="'đây là ' + name" />
 </div>
-
