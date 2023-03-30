@@ -10,4 +10,7 @@
     <input [value]="name" title="đây là {{name}}" />     <!-- gọi biến "name" -->
     <br/>
     <input [value]="name" [title]="'đây là ' + name" />
+    <br/>
+    <h2 *ngIf="age > 18"> Bạn còn trẻ</h2>
+    <h2 *ngIf="age <= 18">Bạn đã già rồi</h2>
 </div>
